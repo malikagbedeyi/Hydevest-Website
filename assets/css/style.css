@@ -3878,7 +3878,7 @@ a.text-theme:hover,
 .service-style1:hover .service-icon {
   background-color: var(--white-color);
 }
- .process_faq-icon{
+.process_faq-icon{
       font-size: 50px!important;
       display:flex;
       justify-content: center;
@@ -3886,11 +3886,11 @@ a.text-theme:hover,
       margin:auto;
       color: var(--theme-color);
       height: 100%;
-    }
-    .invex-container{
+ }
+.invex-container{
       padding:0 3%;
-    }
-      .service-breadcumb{
+}
+.service-breadcumb{
       padding: 30px;
       position: relative;
   height: 100%;
@@ -3905,8 +3905,8 @@ a.text-theme:hover,
   background-color: rgb(88, 26, 174,0.3);
   transform: rotate(43.46deg);
 }
-      }
-    .invex-breadcumb{
+}
+.invex-breadcumb{
       padding: 30px 0 30px 80px;
       position: relative;
   height: 100%;
@@ -3939,8 +3939,8 @@ a.text-theme:hover,
   font-size: 40px;
   margin-left: 30px;
 }
-    }
-    .override-breadcumb{
+}
+.override-breadcumb{
   padding-top: 100px!important;
   padding-bottom: 105px!important;
   background-color: var(--title-color);
@@ -3992,8 +3992,69 @@ a.text-theme:hover,
 img{
   height: 500px!important;
   object-fit: cover;
+  border-radius: 0 20px 20px 0;
   
 }
+}
+.container-text-content{
+  h5{
+    color: var(--theme-color);
+  }
+}
+.airdried-style1{
+  /* margin-bottom: 10%; */
+  height: 60vh;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+    width: 100%;
+    border:none;
+    background: #fff;
+     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
+     border-radius: 16px;
+  .airdried-img{
+      width: 100%;
+      overflow:hidden;
+    img{
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+      border: none;
+      overflow:hidden;
+      border-radius: 16px 16px 0 0;
+    }
+  }
+  .airdried-text{
+    padding: 10px;
+  }
+}
+.details-contain-img{
+  height: 50vh!important;
+  width: 100%;
+  object-fit: cover;
+
+}
+.video-wrap{
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  video{
+    width: 100%;
+    height: 50vh;
+    display: block;
+    border-radius: 16px;
+    &::-webkit-media-controls{
+      display: none!important;
+    }
+  }
+  .blocker{
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    background: transparent;
+  }
 }
 /* ------------------ */
 .will-sticky .sticky-active {
