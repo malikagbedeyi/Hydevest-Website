@@ -113,7 +113,7 @@
                  </ul>
             </div>
               <div class="col-auto ">
-                 <a href="https://hydevest-dashboard.vercel.app/" class="login-btn vs-btn" >Login</a>
+                 <a href="https://hydevest-dashboard.vercel.app/#/login" class="login-btn vs-btn" >Login</a>
                  </div>
         </div>
     </div>
@@ -154,7 +154,7 @@
                             </nav>
                         </div>
                         <div class="col-auto ">
-                            <a href="https://hydevest-dashboard.vercel.app/" class="login-btn vs-btn" >Login</a>
+                            <a href="https://hydevest-dashboard.vercel.app/#/login"  target="_blank" rel="noopener noreferrer" class="login-btn vs-btn" >Login</a>
                         </div>
                     </div>
                 </div>
@@ -368,14 +368,28 @@
             <div class="row gx-60">
                 <div class="col-lg-6 pb-20 pb-lg-0 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="img-box2">
-                        <div class="img-1"><img src="assets/img/cow/cow-being.png" alt="FAQ image"></div>
-                        <div class="img-2"><img src="assets/img/cow/cow-being-2.png" alt="FAQ image"><a
+                        <div class="img-1">
+
+                             <div class="video-wrap-dry">
+                            <video id="myVideo"  class="cow-vid"
+                            src="assets/img/dry.mp4"
+                            autoplay
+                            muted
+                            playsinline 
+                            preload="auto"
+                            tabindex="1"
+                            >
+                        </video>
+                        <div class="blocker" aria-hidden="true"></div>
+                           </div> 
+                        </div>
+                        <div class="img-2"><img src="assets/img/faq/faq-1-1.jpg" alt="FAQ image"><a
                                 class="play-btn style3 position-center"
                                 href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class=""><i
                                         class="fas fa-play"></i></i></a></div>
                     </div>
                 </div>
-                <div class="col-lg-6 align-self-center ">
+                <div class="col-lg-6 align-self-center">
                     <span class="sec-subtitle text-white"><i class="fas fa-bring-forward"></i>Talk AboutSomething</span>
                     <h2 class="sec-title text-white mb-4 pb-2 h1">How can we help you?</h2>
                     <div class="accordion accordion-style1" id="faqVersion1">
@@ -578,6 +592,33 @@
     <!--==============================
         All Js File
     ============================== -->
+     <script>
+        (function() {
+            const video = document.getElementById('myVideo')
+            ideo.controls=false;
+            ideo.loops=true;
+            let preventingPause = true;
+
+            video.addEventListener('pause',() => {
+                if(preventingPause){
+                    setTimeout(() => {
+                        if (video.paused) video.play().catch(()=>{});
+                    },50);
+                }
+            })
+            video.addEventListener('contextmenu', e => e.preventDefault());
+
+            window.addEventListener('keydown', (e)=> {
+                if(e.code === 'Space' || e.key === ' ' || e.key === 'k'){
+                    e.preventDefault()
+                }
+            },{passive:false});
+            video.play().catch(err => {
+                console.warn('Autoplay failed:' , err);
+            })
+            video.setAttribute('aria-hidden', 'true');
+        })();
+    </script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <!-- Slick Slider -->
