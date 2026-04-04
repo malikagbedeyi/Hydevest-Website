@@ -75,12 +75,12 @@
     <!--==============================
      Preloader
   ==============================-->
-    <div class="preloader  ">
+    <!-- <div class="preloader  ">
         <button class="vs-btn preloaderCls">Cancel Preloader </button>
         <div class="preloader-inner">
             <span class="loader"></span>
         </div>
-    </div>
+    </div> -->
     <!--==============================
     Mobile Menu
   ============================== -->
@@ -279,9 +279,9 @@
                             </div>
                             <div class="img-2">
                                 <img src="/assets/img/cow/3.png" alt="About image">
-                                <a class="play-btn style3 position-center popup-video"
+                                <!-- <a class="play-btn style3 position-center popup-video"
                                     href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class=""><i
-                                            class="fas fa-play"></i></i></a>
+                                            class="fas fa-play"></i></i></a> -->
                             </div>
                         </div>
                     </div>
@@ -382,10 +382,10 @@
                         <div class="blocker" aria-hidden="true"></div>
                            </div> 
                         </div>
-                        <div class="img-2"><img src="/assets/img/faq/faq-1-1.jpg" alt="FAQ image"><a
-                                class="play-btn style3 position-center"
+                        <div class="img-2"><img src="/assets/img/faq/faq-1-1.jpg" alt="FAQ image">
+                            <!-- <a    class="play-btn style3 position-center"
                                 href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class=""><i
-                                        class="fas fa-play"></i></i></a></div>
+                                        class="fas fa-play"></i></i></a></div> -->
                     </div>
                 </div>
                 <div class="col-lg-6 align-self-center">
@@ -562,9 +562,9 @@
             </div>
         </div>
         <div class="copyright-wrap">
-            <div class="container d-flex justify-content-between">
+            <div class="container d-flex justify-content-between flex-wrap">
                  <div class="vs-widget-about">
-                                <div class="footer-social">
+                                <div class="footer-social flex-wrap">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                      <a href="#"><i class="fab fa-brands fa-solid fa-tiktok"></i></a>
@@ -596,7 +596,7 @@
             const video = document.getElementById('myVideo')
             video.controls = false;
             video.loop = true;
-            let preventingPause = true;
+            let preventingPause = true; 
 
             video.addEventListener('pause',() => {
                 if(preventingPause){

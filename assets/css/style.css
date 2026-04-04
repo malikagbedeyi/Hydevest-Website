@@ -7736,6 +7736,7 @@ vs-btn {
   text-align: right;
   width: 530px;
   height: 480px;
+
 }
 .img-box3 .img-2 {
   margin: -250px 0 0 -20px;
@@ -8775,6 +8776,25 @@ vs-btn {
     border-right: none;
     margin-top: 20px;
   }
+  .img-box3 .img-1 {
+      width: 100%;
+      object-fit: cover;
+      margin: -100px 0;
+      display: none;
+    }
+    .img-box3 .img-2{
+      width: 100%;
+      object-fit: cover;
+      margin: 0 0 -50px 0;
+    }
+    .img-box8 .img-1{
+ width: 100%;
+      /* object-fit: cover; */
+    }
+    .service-style1.layout2 {
+  height: 100%!important;
+  padding-bottom: -50px;
+}
 }
 /*------------------- 4.12. Service  -------------------*/
 .service-style1 {
